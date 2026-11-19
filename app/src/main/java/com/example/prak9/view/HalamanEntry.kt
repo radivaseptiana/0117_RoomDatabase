@@ -142,7 +142,7 @@ fun FormInputSiswa(
                 modifier = Modifier.padding(start = dimensionResource(id = R.dimen.padding_medium))
             )
         }
-        HorizedontalLine(
+        Horizontaldivider(
             modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_medium)),
             thickness = dimensionResource(R.dimen.padding_small),
             color = Color.Blue
