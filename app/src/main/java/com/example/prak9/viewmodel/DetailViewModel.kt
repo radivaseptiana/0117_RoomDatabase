@@ -9,7 +9,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 
 class DetailViewModel(
-    savedStateHandle: SavedStateHandle
+    savedStateHandle: SavedStateHandle,
     private val repositoriSiswa: RepositoriSiswa
 ): ViewModel() {
 
@@ -34,3 +34,11 @@ class DetailViewModel(
         private const val TIMEOUT_MILLIS = 5_000L
     }
 }
+
+/**
+ * UI state for ItemDetailScreen
+ */
+
+data class DetailSiswaUiState(
+    val detailSiswa: DetailSiswa = DetailSiswa()
+)
